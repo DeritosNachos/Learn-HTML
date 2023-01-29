@@ -10,7 +10,7 @@ function get_number(prompt) {
     
         if(maxNum != NaN && maxNum > 0) {
             valid_input = true;
-        } else if (isNaN(maxNum)) {
+        } else if (isNaN(maxNum) || maxNum == Number(null)) {
             alert("This isn't a number!");
         } else {
             alert("This is a negative number, you need a positive one!");
